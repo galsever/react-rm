@@ -1,5 +1,6 @@
 import {Navigate, Outlet} from "react-router-dom";
 import {useAuth} from "react-oidc-context";
+import Sidebar from "../components/sidebar.tsx";
 
 export default function Layout() {
 
@@ -9,8 +10,8 @@ export default function Layout() {
     if (!auth.isAuthenticated) return <Navigate to="/" />
 
     return (
-        <div>
+        <Sidebar>
             <Outlet />
-        </div>
+        </Sidebar>
     )
 }

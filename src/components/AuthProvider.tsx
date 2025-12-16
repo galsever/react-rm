@@ -7,7 +7,7 @@ interface Props {
 }
 
 const oidcConfig = {
-    authority: "http://45.84.196.167:9000/application/o/ktor/",
+    authority: "https://auth.citykrimi.com/application/o/ktor/",
     client_id: "6ZpynOWbaqaGl0BEdaFVFARCpcF2MkgZ6KLJHxRI",
     redirect_uri: "http://localhost:5173/",
     response_type: "code",

@@ -1,6 +1,8 @@
 import * as React from "react";
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import {useState} from "react";
+import Links from "./links.tsx";
+import Profile from "./profile.tsx";
 
 interface Props {
     children: React.ReactNode;
@@ -20,6 +22,10 @@ export default function Sidebar({children}: Props) {
                             <KeyboardDoubleArrowLeftIcon />
                         </button>
                     </div>
+                </div>
+                <div className="h-full flex flex-col justify-between">
+                    <Links isCollapsed={isCollapsed} />
+                    <Profile />
                 </div>
             </div>
             <div>{children}</div>

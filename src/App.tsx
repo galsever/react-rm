@@ -1,4 +1,3 @@
-import './App.css'
 import {useAuth} from "react-oidc-context";
 
 export default function App() {

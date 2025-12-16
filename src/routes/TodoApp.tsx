@@ -1,5 +1,4 @@
 import {useTodos} from "../hooks/useTodos.ts";
-import Sidebar from "../components/sidebar.tsx";
 
 export default function TodoApp() {
 
@@ -17,9 +16,7 @@ export default function TodoApp() {
     }
 
     return (
-        <Sidebar>
-            <p className="text-3xl">To-Do</p>
-        </Sidebar>
+        <p className="text-3xl">To-Do</p>
     )
 }
 

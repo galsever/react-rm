@@ -7,10 +7,7 @@ import App from "./App.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./routes/layout.tsx";
 import TodoApp from "./routes/TodoApp.tsx";
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
+import SearchApp from "./routes/SearchApp.tsx";
 
 const router = createBrowserRouter([
     {
@@ -22,8 +19,12 @@ const router = createBrowserRouter([
         element: <Layout />,
         children: [
             {
-                path: "/app",
+                path: "todos",
                 element: <TodoApp />
+            },
+            {
+                path: "search",
+                element: <SearchApp />
             }
         ]
     }
